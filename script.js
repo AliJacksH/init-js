@@ -63,4 +63,10 @@
 
 
 var nome = window.prompt("Qual o seu nome?");
-document.write("Bem vindo, " + nome);
+var altura = window.prompt("Qual a sua altura em centímetros?");
+var idade = window.prompt("Qual sua idade?");
+
+
+
+document.write('Olá '+nome+'! que bom te ter aqui. Legal saber que você tem '+altura+'cm de altura e '+idade+' anos!');
+
