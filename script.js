@@ -4,16 +4,15 @@
 
 // variável é um local de armazenamento de informações
 
-// var nome = "Jackson";
+
+// let nome = "Jackson";
 // var idade = 29;
 // var alturaEmCm = 184;
 
-
+//TIPOS de dado presentes na linguagem JS são: Number / Numerico e String / Texto
 
 // document.write(nome);
-// document.write(
-//     alturaEmCm
-//     );
+// document.write(alturaEmCm);
 
 // console.log(idade);
 
@@ -32,14 +31,19 @@
 // console.log(melhorComida);
 // console.log(filme);
 
-// var num1 = 10;
-// var num2 = 15;
-// var num3 = 2;
-// var resultado = (num1 + num2) / num3;
+
+
+
+
+
+// let num1 = 10;
+// let num2 = 15;
+// let num3 = 2;
+// let resultado = ((((num1 + num2) / num3) + num3) * num2);
 
 // console.log(resultado);
 
-// soma +
+// sinail para soma é o +
 // subtração -
 // multiplicação *
 // divisão /
@@ -52,26 +56,27 @@
 //VERDADEIRO OU FALSO é sempre boolean
 
 
+
+
+
+
 // window.alert("o que eu quiser");
 // window.confirm("Você é legal?");
 // window.prompt("Qual o seu nome?");
 
 
+// let nome = window.prompt("Qual o seu nome?");
+// console.log(nome)
+// let altura = window.prompt("Qual a sua altura em centímetros?");
+// let idade = window.prompt("Qual sua idade?");
 
-
-
-
-
-var nome = window.prompt("Qual o seu nome?");
-var altura = window.prompt("Qual a sua altura em centímetros?");
-var idade = window.prompt("Qual sua idade?");
-
-
-
-document.write('Olá ' + nome + '! Legal saber que você tem ' + altura + 'cm de altura e ' + idade + ' anos!</br>');
-document.write(`Olá ${nome}! Legal saber que você tem ${idade} anos e ${altura}cm de altura</br>`)
-document.write(`Seu nome tem ${nome.length} letras</br>`)
-document.write(`Seu nome em MAIÚSCULAS é: ${nome.toUpperCase()}`)
+// document.write('Olá ' + nome + '! Legal saber que você tem ' + altura + 'cm de altura e ' + idade + ' anos!</br>');
+// document.write(nome+', então quer dizer que você tem '+idade+' anos e '+altura+'cm de altura?')
+// document.write(`Oi seu ${nome} você vem sempre aqui?`)
+// document.write(`Olá ${nome}! Legal saber que você tem ${idade} anos e ${altura}cm de altura</br>`)
+// document.write(`Seu nome tem ${nome.length} letras</br>`)
+// document.write(`Seu nome em MAIÚSCULAS é: ${nome.toUpperCase()}</br>`)
+// document.write(`Seu nome em MAIÚSCULAS é: ${nome.toLowerCase()}`)
 
 
 //Escrever na página com o document.write()
@@ -79,47 +84,61 @@ document.write(`Seu nome em MAIÚSCULAS é: ${nome.toUpperCase()}`)
 //perguntar com o window.prompt()
 // confirmar com o window.confirm()
 
+
+
+
 // Number.pasrseInt() para converter em NÚMERO INTEIRO
 // Number.pasrseFloat() para converter em NÚMERO REAL / DECIMAL
 // Number() para converter em número
 
-// var n1 = Number.parseInt(window.prompt("Informe o primeiro número:"))
-// var n2 = Number.parseInt(window.prompt("Informe o segundo número:"))
 
-// var resultado = n1 + n2
+// let n1 = window.prompt("Insira um número:")
+// let n2 = window.prompt("Insira outro número:")
 
-// document.write("O resultado da soma é: " + resultado + ' ')
+// let n1 = Number.parseInt(window.prompt("Informe o primeiro número:"))
+// let n2 = Number.parseInt(window.prompt("Informe o segundo número:"))
 
+// let resultado = n1 + n2
 
-// var n1 = Number(window.prompt("Informe o primeiro número:"));
-// var n2 = Number(window.prompt("Informe o segundo número:"));
-
-// var soma = n1 + n2;
-
-// document.write("O <strong>resultado</strong> da <strong>soma</strong> é: " + soma + '</br>');
-
-// var n3 = Number(window.prompt("Informe o primeiro número:"));
-// var n4 = Number(window.prompt("Informe o segundo número:"));
-
-// var subtracao = n3 - n4;
-
-// document.write("O resultado da <strong>subtração</strong> é: " + subtracao + '</br>');
-
-// var n5 = Number.parseFloat(window.prompt("Informe o primeiro número:"));
-// var n6 = Number.parseInt(window.prompt("Informe o segundo número:"));
-
-// var multiplicacao = n5 * n6;
-
-// document.write("O resultado da multiplicação é: " + multiplicacao + '</br>');
+// document.write(`O resultado da soma é ${resultado}`)
 
 
-// var n7 = Number.parseFloat(window.prompt("Informe o primeiro número:"));
-// var n8 = Number.parseInt(window.prompt("Informe o segundo número:"));
+var n1 = Number(window.prompt("Informe o primeiro número:"));
+var n2 = Number(window.prompt("Informe o segundo número:"));
 
-// var divisao = n7 / n8;
+var soma = n1 + n2;
 
-// document.write("O resultado da disisão é: " + divisao + '</br>');
+document.write("O <strong>resultado</strong> da <strong>soma</strong> é: " + soma + '</br>');
+
+
+var n3 = Number(window.prompt("Informe o primeiro número:"));
+var n4 = Number(window.prompt("Informe o segundo número:"));
+
+var subtracao = n3 - n4;
+
+document.write("O resultado da <strong>subtração</strong> é: " + subtracao + '</br>');
+
+
+var n5 = Number.parseFloat(window.prompt("Informe o primeiro número:"));
+var n6 = Number.parseInt(window.prompt("Informe o segundo número:"));
+
+var multiplicacao = n5 * n6;
+
+document.write("O resultado da multiplicação é: " + multiplicacao + '</br>');
+
+
+var n7 = Number.parseFloat(window.prompt("Informe o primeiro número:"));
+var n8 = Number.parseInt(window.prompt("Informe o segundo número:"));
+
+var divisao = n7 / n8;
+
+document.write("O resultado da divisão é: " + divisao + '</br>');
 
 
 // Conversão de número para texto: String(n)   ou    n.toString()
 
+// let batata = 95
+
+// batata.toString()
+
+// String(batata)
