@@ -103,36 +103,36 @@
 // document.write(`O resultado da soma é ${resultado}`)
 
 
-var n1 = Number(window.prompt("Informe o primeiro número:"));
-var n2 = Number(window.prompt("Informe o segundo número:"));
+// var n1 = Number(window.prompt("Informe o primeiro número:"));
+// var n2 = Number(window.prompt("Informe o segundo número:"));
 
-var soma = n1 + n2;
+// var soma = n1 + n2;
 
-document.write("O <strong>resultado</strong> da <strong>soma</strong> é: " + soma + '</br>');
-
-
-var n3 = Number(window.prompt("Informe o primeiro número:"));
-var n4 = Number(window.prompt("Informe o segundo número:"));
-
-var subtracao = n3 - n4;
-
-document.write("O resultado da <strong>subtração</strong> é: " + subtracao + '</br>');
+// document.write("O <strong>resultado</strong> da <strong>soma</strong> é: " + soma + '</br>');
 
 
-var n5 = Number.parseFloat(window.prompt("Informe o primeiro número:"));
-var n6 = Number.parseInt(window.prompt("Informe o segundo número:"));
+// var n3 = Number(window.prompt("Informe o primeiro número:"));
+// var n4 = Number(window.prompt("Informe o segundo número:"));
 
-var multiplicacao = n5 * n6;
+// var subtracao = n3 - n4;
 
-document.write("O resultado da multiplicação é: " + multiplicacao + '</br>');
+// document.write("O resultado da <strong>subtração</strong> é: " + subtracao + '</br>');
 
 
-var n7 = Number.parseFloat(window.prompt("Informe o primeiro número:"));
-var n8 = Number.parseInt(window.prompt("Informe o segundo número:"));
+// var n5 = Number.parseFloat(window.prompt("Informe o primeiro número:"));
+// var n6 = Number.parseInt(window.prompt("Informe o segundo número:"));
 
-var divisao = n7 / n8;
+// var multiplicacao = n5 * n6;
 
-document.write("O resultado da divisão é: " + divisao + '</br>');
+// document.write("O resultado da multiplicação é: " + multiplicacao + '</br>');
+
+
+// var n7 = Number.parseFloat(window.prompt("Informe o primeiro número:"));
+// var n8 = Number.parseInt(window.prompt("Informe o segundo número:"));
+
+// var divisao = n7 / n8;
+
+// document.write("O resultado da divisão é: " + divisao + '</br>');
 
 
 // Conversão de número para texto: String(n)   ou    n.toString()
@@ -142,3 +142,101 @@ document.write("O resultado da divisão é: " + divisao + '</br>');
 // batata.toString()
 
 // String(batata)
+
+
+
+
+
+// OPERADORES MATEMÁTICOS
+
+
+// let n1 = 7;
+// let n2 = 2;
+// let n3 = 4
+
+
+/** 
+ Parentesis ()
+ Potenciação **
+ Multiplicação *     Divisão /     Resto de divisão %
+ Soma +     Subtração -
+ **/
+
+
+//  let resultado = (n2 + (n1 - n3)) ** n2 + n2 % n1
+//  console.log(resultado)
+
+// ATRIBUIÇÃO
+
+let n1 = 5 + 3
+let n2 = n1 % 5
+let n3 = 5 * n2 ** 2
+
+// AUTO ATRIBUIÇÃO
+
+let n = 5
+n = n + 5     n += 5
+n = n - 5     n -= 5
+n = n * 2     n *= 2
+m = n / 2     n /= 2
+n = n ** 2    n **= 2
+n = n % 2     n %= 2
+
+// INCREMENTO E DECREMENTO
+
+let num = 5
+num = num + 1     num++
+num = num - 1     num--
+
+
+// OPERADORES RELACIONAIS
+
+// maior > 
+// menor < 
+
+5 > 2 // cinco é maior que dois
+2 < 5 // dois é menor que cinco
+
+// operador relacional sempre vai ter como resultado booleano (verdadeiro ou falso)
+
+5 > 2 = true // > maior
+5 < 2 = false // < menor
+2 > 5 = false
+2 < 5 = true
+3 > 3 = false
+3 < 3 = false
+
+3 <= 3 = true
+3 >= 3 = true
+
+5 >= 2 = true // >= maior ou igual
+9 <= 5 = false // <= menor ou igual
+
+5 == 5 = true // == igualdede
+5 == 3 = false
+
+5 === 5 = true // === idêntico
+5 == '5' = true
+5 === '5' = false
+
+5 != 5 = false // != diferente
+5 != 3 = true
+
+//OPERADORES LÓGICOS
+
+// ! negação
+// && conjunção E
+// || disjunção OU
+
+!true = false
+!false = true
+
+true && true = true     
+true && false = false
+false && true = false
+false && false = false
+
+true || true = true
+true || false = true
+false || true = true
+false || false = false
