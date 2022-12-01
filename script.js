@@ -152,7 +152,7 @@
 
 // let n1 = 7;
 // let n2 = 2;
-// let n3 = 4
+// let n3 = 4;
 
 
 /** 
@@ -163,80 +163,95 @@
  **/
 
 
-//  let resultado = (n2 + (n1 - n3)) ** n2 + n2 % n1
+//  let resultado = ((n2 + (n1 - n3)) ** (n2 + n2 % n1))
 //  console.log(resultado)
 
 // ATRIBUIÇÃO
 
-let n1 = 5 + 3
-let n2 = n1 % 5
-let n3 = 5 * n2 ** 2
+// let n1 = 5 + 3
+// let n2 = n1 % 5
+// let n3 = 5 * n2 ** 2
 
 // AUTO ATRIBUIÇÃO
 
-let n = 5
-n = n + 5     n += 5
-n = n - 5     n -= 5
-n = n * 2     n *= 2
-m = n / 2     n /= 2
-n = n ** 2    n **= 2
-n = n % 2     n %= 2
+// let n = 5
+// n = n + 5     n += 5
+// n = n - 5     n -= 5
+// n = n * 2     n *= 2
+// m = n / 2     n /= 2
+// n = n ** 2    n **= 2
+// n = n % 2     n %= 2
 
 // INCREMENTO E DECREMENTO
 
-let num = 5
-num = num + 1     num++
-num = num - 1     num--
-
+// let num = 5
+// num = num + 1     num++
+// num = num - 1     num--
 
 // OPERADORES RELACIONAIS
 
 // maior > 
 // menor < 
 
-5 > 2 // cinco é maior que dois
-2 < 5 // dois é menor que cinco
+// 5 > 2 // cinco é maior que dois
+// 2 < 5 // dois é menor que cinco
 
 // operador relacional sempre vai ter como resultado booleano (verdadeiro ou falso)
 
-5 > 2 = true // > maior
-5 < 2 = false // < menor
-2 > 5 = false
-2 < 5 = true
-3 > 3 = false
-3 < 3 = false
+// 5 > 2 = true // > maior
+// 5 < 2 = false // < menor
+// 2 > 5 = false
+// 2 < 5 = true
+// 3 > 3 = false
+// 3 < 3 = false
 
-3 <= 3 = true
-3 >= 3 = true
+// 3 <= 3 = true
+// 3 >= 3 = true
 
-5 >= 2 = true // >= maior ou igual
-9 <= 5 = false // <= menor ou igual
+// 5 >= 2 = true // >= maior ou igual
+// 9 <= 5 = false // <= menor ou igual
 
-5 == 5 = true // == igualdede
-5 == 3 = false
+// 5 == 5 = true // == igualdede
+// 5 == 3 = false
 
-5 === 5 = true // === idêntico
-5 == '5' = true
-5 === '5' = false
+// 5 === 5 = true // === idêntico
+// 5 == '5' = true
+// 5 === '5' = false
 
-5 != 5 = false // != diferente
-5 != 3 = true
+// 5 != 5 = false // != diferente
+// 5 != 3 = true
 
 //OPERADORES LÓGICOS
 
 // ! negação
-// && conjunção E
-// || disjunção OU
+// && conjunção E AND
+// || disjunção OU OR XOR
 
-!true = false
-!false = true
+// !true = false
+// !false = true
 
-true && true = true     
-true && false = false
-false && true = false
-false && false = false
+// true && true = true     
+// true && false = false
+// false && true = false
+// false && false = false
 
-true || true = true
-true || false = true
-false || true = true
-false || false = false
+// true || true = true
+// true || false = true
+// false || true = true
+// false || false = false
+
+
+
+// DOM - DOCUMENT OBJECT MODEL - MODELO DE DOCUMENTO OBJETO
+
+let n = window.document.getElementById('texto')
+n.style.background = 'blue'
+
+// let variavel = document.getElementsByTagName('p')[1]
+// variavel.style.color = 'white'
+
+let aula = window.document.getElementsByClassName('teste')
+aula.style.color = 'azure'
+
+
+document.querySelectorAll('#texto')
