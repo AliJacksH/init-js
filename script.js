@@ -244,14 +244,59 @@
 
 // DOM - DOCUMENT OBJECT MODEL - MODELO DE DOCUMENTO OBJETO
 
-let n = window.document.getElementById('texto')
-n.style.background = 'blue'
+// let n = window.document.getElementById('texto')
+// n.style.background = 'blue'
 
 // let variavel = document.getElementsByTagName('p')[1]
 // variavel.style.color = 'white'
 
-let aula = window.document.getElementsByClassName('teste')
-aula.style.color = 'azure'
+// let aula = window.document.getElementsByClassName('teste')
+// aula.style.color = 'azure'
+
+// document.querySelectorAll('#texto')
 
 
-document.querySelectorAll('#texto')
+
+// EVENTOS DOM
+
+
+/* 1- o que são eventos?
+exemplos básicos: movimentos do mouse, clicks, toque...
+
+
+2 - como uso eventos em JS?
+função -> function
+
+DICA: pesquisar funções, métodos, classes e parâmetros
+
+
+3 - Quais são as 2 formas de disparar eventos JS?
+
+
+4 - pq não é legal usar variáveis dentro de funções? 
+
+para tratar erro usamos muito 'try catch'
+
+*/
+
+
+let espaco = document.querySelector(".area")
+espaco.addEventListener('click', clicar)
+espaco.addEventListener('mouseenter', entrar)
+espaco.addEventListener('mouseout', sair)
+
+function clicar() {
+    espaco.innerText = "Clicou!"
+    espaco.style.background = 'tomato'
+}
+
+function entrar(){
+    espaco.innerText = "Entrou!"
+    espaco.style.background = 'green'
+}
+
+function sair(){
+    espaco.innerText = "Saiu!"
+    espaco.style.background = 'tomato'
+}
+
